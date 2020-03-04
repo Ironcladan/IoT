@@ -1,0 +1,30 @@
+﻿<!-- nav -->
+<nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
+    <div class="navbar-nav">
+        <div class="navbar-nav">
+            <a class="navbar-brand" routerLink="#">IoT DEVICE MANAGEMENT SYSTEM </a>
+            <a class="nav-item nav-link" routerLink="/"><img src="../assets/icons/home.png" style="width: 18px; margin-top: 0px;"> Home</a>
+            <a class="nav-item nav-link" routerLink="/meta"><img src="../assets/icons/meta.png" style="width: 18px; margin-top: 0px;">MetaData</a>
+            <a class="nav-item nav-link" routerLink="/map"><img src="../assets/icons/marker.png" style="width: 18px; margin-top: 0px;"> Map</a>
+            <a class="nav-item nav-link" routerLink="/fault"><img src="../assets/icons/fault.webp" style="width: 18px; margin-top: 0px;"> Fault</a>
+            <a class="nav-item nav-link" routerLink="/config"><img src="../assets/icons/config.png" style="width: 18px; margin-top: 0px;"> Configuration Service</a>
+            <a class="nav-item nav-link" routerLink="/user"><img src="../assets/icons/user.png" style="width: 18px; margin-top: 0px;"> User</a>
+            <a class="nav-item nav-link right" (click)="logout()"><img src="../assets/icons/logout.png" style="width: 18px; margin-top: 0px;">Logout</a>
+        </div>
+    </div>
+</nav>
+
+<!-- main app container -->
+
+                <alert></alert>
+                <router-outlet></router-outlet>
+
+<!-- credits -->
+<div class="text-center">
+    <p>
+        
+    </p>
+    <p>
+        
+    </p>
+</div>
